@@ -6,7 +6,7 @@ int main() {
 	int n = 0;
 	printf("输入查找的数字：\n");
 	scanf("%d", &n);
-	int low = 0, high = 9;
+	int low = 0, high = sizeof(a)/sizeof(a[0])-1;//右边的下标是长度减一
 	while (low <= high) {
 		int mid = (low + high) / 2;
 		if (n > a[mid]) {
